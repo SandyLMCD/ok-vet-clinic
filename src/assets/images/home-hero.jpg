@@ -1,0 +1,2 @@
+/* binary image placeholder: create a tiny base64 jpg-like file to satisfy imports in CRA. */
+data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=

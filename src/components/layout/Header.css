@@ -1,0 +1,14 @@
+.site-header {
+  background: #0b5;
+  padding: 12px 0;
+}
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-header nav a {
+  margin-left: 12px;
+  color: #000;
+  text-decoration: none;
+}

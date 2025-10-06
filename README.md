@@ -68,3 +68,42 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Recommended project structure (src/)
+
+Add the following structure inside `src/` to organize pages, shared components, and assets for a 5-page site:
+
+```
+src/
+	assets/
+		images/
+		icons/
+	components/
+		common/
+		layout/
+	pages/
+		Home/
+			Home.jsx
+			Home.css
+		About/
+			About.jsx
+		Services/
+			Services.jsx
+		Contact/
+			Contact.jsx
+		Appointments/
+			Appointments.jsx
+	hooks/
+	services/
+	contexts/
+	App.js
+	index.js
+```
+
+Notes:
+
+- Put static images you import into `src/assets/images` so CRA processes them during build.
+- Use `components/layout` for `Header`, `Footer`, and `MainLayout` containing a `react-router` <Outlet/>.
+- Use CSS Modules (`Component.module.css`) or plain CSS files under the page folder for local styles.
+
+See the `src/` folder in this repo for the scaffolded pages and layout components added during setup.
